@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Gem manager",
+  "version": "1.0",
+  "description": "Small CE to help you manage Gem instructions",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "*://gemini.google.com/*"
+  ],
+  "action": {
+    "default_title": "Gem manager Sidebar",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["gems_data.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://gemini.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+} 

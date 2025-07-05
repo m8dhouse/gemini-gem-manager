@@ -1,0 +1,121 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and gradients -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a9e;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#fecfef;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gemShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c471ed;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#f64f59;stop-opacity:0.6" />
+    </linearGradient>
+    <radialGradient id="gemHighlight" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="64" cy="64" r="64" fill="url(#bgGradient)"/>
+  
+  <!-- Gem shadow -->
+  <polygon points="64,20 40,45 25,80 64,105 103,80 88,45" fill="url(#gemShadow)" opacity="0.4" transform="translate(3,3)"/>
+  
+  <!-- Main gem shape (more faceted like 💎) -->
+  <polygon points="64,20 40,45 25,80 64,105 103,80 88,45" fill="url(#gemGradient)" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Top facet -->
+  <polygon points="64,20 40,45 88,45" fill="rgba(255,255,255,0.6)"/>
+  
+  <!-- Left facet -->
+  <polygon points="64,20 64,105 40,45" fill="rgba(255,255,255,0.4)"/>
+  
+  <!-- Right facet -->
+  <polygon points="64,20 64,105 88,45" fill="rgba(255,255,255,0.2)"/>
+  
+  <!-- Bottom left facet -->
+  <polygon points="64,105 40,45 25,80" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Bottom right facet -->
+  <polygon points="64,105 88,45 103,80" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Center facet -->
+  <polygon points="64,20 64,105 25,80 103,80" fill="rgba(255,255,255,0.1)"/>
+  
+  <!-- Main highlight -->
+  <ellipse cx="58" cy="35" rx="12" ry="6" fill="url(#gemHighlight)" transform="rotate(-15 58 35)"/>
+  
+  <!-- Secondary highlight -->
+  <ellipse cx="70" cy="45" rx="8" ry="4" fill="rgba(255,255,255,0.7)" transform="rotate(10 70 45)"/>
+  
+  <!-- Large sparkles around the gem -->
+  <g transform="translate(20,30)">
+    <path d="M-4,0 L4,0 M0,-4 L0,4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1" fill="#fff"/>
+  </g>
+  
+  <g transform="translate(108,45)">
+    <path d="M-3,0 L3,0 M0,-3 L0,3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1" fill="#fff"/>
+  </g>
+  
+  <g transform="translate(25,90)">
+    <path d="M-3,0 L3,0 M0,-3 L0,3" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1" fill="#fff"/>
+  </g>
+  
+  <g transform="translate(103,95)">
+    <path d="M-4,0 L4,0 M0,-4 L0,4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="1" fill="#fff"/>
+  </g>
+  
+  <!-- Medium sparkles -->
+  <g transform="translate(35,25)" opacity="0.9">
+    <path d="M-2,0 L2,0 M0,-2 L0,2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(93,35)" opacity="0.9">
+    <path d="M-2,0 L2,0 M0,-2 L0,2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(30,100)" opacity="0.9">
+    <path d="M-2,0 L2,0 M0,-2 L0,2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(98,105)" opacity="0.9">
+    <path d="M-2,0 L2,0 M0,-2 L0,2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Small sparkles -->
+  <circle cx="15" cy="40" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle cx="113" cy="60" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle cx="20" cy="110" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle cx="110" cy="115" r="1.5" fill="#fff" opacity="0.8"/>
+  
+  <!-- Inner gem sparkles -->
+  <circle cx="50" cy="60" r="1" fill="#fff" opacity="0.9"/>
+  <circle cx="78" cy="70" r="1" fill="#fff" opacity="0.9"/>
+  <circle cx="45" cy="85" r="1" fill="#fff" opacity="0.9"/>
+  <circle cx="83" cy="85" r="1" fill="#fff" opacity="0.9"/>
+  
+  <!-- Cross sparkles inside gem -->
+  <g transform="translate(50,60)" opacity="0.9">
+    <path d="M-1.5,0 L1.5,0 M0,-1.5 L0,1.5" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(78,70)" opacity="0.9">
+    <path d="M-1.5,0 L1.5,0 M0,-1.5 L0,1.5" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(45,85)" opacity="0.9">
+    <path d="M-1.5,0 L1.5,0 M0,-1.5 L0,1.5" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(83,85)" opacity="0.9">
+    <path d="M-1.5,0 L1.5,0 M0,-1.5 L0,1.5" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+  </g>
+</svg> 

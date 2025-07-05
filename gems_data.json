@@ -1,0 +1,25 @@
+{
+  "gems": [
+    {
+      "name": "test",
+      "fullName": "test v1.0",
+      "instructions": "test instructions for the LLM",
+      "expectedFiles": ["abc", "def"],
+      "knowledge": "add Google drive doc 'abc' and 'def'"
+    },
+    {
+      "name": "Test",
+      "fullName": "Test v1.1",
+      "instructions": "updated test instructions for the LLM",
+      "expectedFiles": ["abc", "def", "ghi"],
+      "knowledge": "add Google drive doc 'abc', 'def' and 'ghi'"
+    },
+    {
+      "name": "Automotive",
+      "fullName": "Automotive v2.3",
+      "instructions": "You are an automotive expert specializing in future of agents and immersive experiences",
+      "expectedFiles": ["Automotive: future of Agents and immersive experiences"],
+      "knowledge": "1. got to shared folder /ABC <br>2. add the document 'Automotive: future of Agents and immersive experiences' located in shared folder /ABC"
+    }
+  ]
+}  
